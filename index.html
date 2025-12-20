@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehrshad</title>
     
-    <!-- Favicon -->
     <link rel="icon" href="https://miro.medium.com/v2/resize:fill:176:176/1*pYDqY6Qn0ytuGHOw_g0VzQ.jpeg" type="image/png">
     <link rel="shortcut icon" href="https://miro.medium.com/v2/resize:fill:176:176/1*pYDqY6Qn0ytuGHOw_g0VzQ.jpeg" type="image/png">
 
@@ -15,17 +14,55 @@
             height: 100vh;
             background-color: black;
             display: flex;
+            flex-direction: column; /* تغییر چیدمان به صورت عمودی */
             justify-content: center;
             align-items: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        
+        .container {
+            text-align: center;
+        }
+
         img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 80%;
+            max-height: 60vh;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .contact-section {
+            margin-top: 25px;
+        }
+
+        .contact-text {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+
+        .email-link {
+            color: #efecec; /* رنگ سبز برای حس امنیت و هک */
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 1px dashed #000000;
+            padding: 5px 15px;
+            transition: all 0.3s;
         }
     </style>
 </head>
 <body>
-    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTdldjUzNWl4dTM1czJhMXBsODB0ZWxxaTYxb28xdno1cnNubWJhaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4CacylzFaHjMM8/giphy.gif" alt="gift">
-</body>
 
+    <div class="container">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTdldjUzNWl4dTM1czJhMXBsODB0ZWxxaTYxb28xdno1cnNubWJhaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4CacylzFaHjMM8/giphy.gif" alt="gift">
+        
+        <div class="contact-section">
+            <p class="contact-text">For collaborations or job inquiries in <b>Security, Pentesting, & Bug Bounty</b>:</p>
+            <a href="mailto:mgkqwer1+work@gmail.com" class="email-link">mgkqwer1+work@gmail.com</a>
+        </div>
+    </div>
+
+</body>
 </html>
